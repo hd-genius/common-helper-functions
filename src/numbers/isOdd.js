@@ -1,1 +1,1 @@
-exports.isOdd = value => value % 2 !== 0
+exports.isOdd = value => (value - 1) % 2 === 0
