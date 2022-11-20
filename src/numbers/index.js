@@ -1,6 +1,6 @@
-const { isEven } = require("./isEven");
-const { isOdd } = require("./isOdd");
-const { isPrime } = require("./isPrime");
+const { isEven } = require('./isEven')
+const { isOdd } = require('./isOdd')
+const { isPrime } = require('./isPrime')
 
 module.exports = {
     isEven,

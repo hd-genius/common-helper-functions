@@ -1,13 +1,12 @@
-const { isOdd } = require("./isOdd");
+const { isOdd } = require('./isOdd')
 
-describe("isOdd", () => {
-    it.each([
-        [1],
-        [57],
-        [1343],
-    ])("should return true when given %s", (value) => {
-        expect(isOdd(value)).toEqual(true);
-    });
+describe('isOdd', () => {
+    it.each([[1], [57], [1343]])(
+        'should return true when given %s',
+        (value) => {
+            expect(isOdd(value)).toEqual(true)
+        }
+    )
 
     it.each([
         [2],
@@ -17,8 +16,8 @@ describe("isOdd", () => {
         [0],
         // numbers with decimals are not odd
         [2.22],
-        [104.1]
-    ])("should return false when given %s", (value) => {
-        expect(isOdd(value)).toEqual(false);
-    });
-});
+        [104.1],
+    ])('should return false when given %s', (value) => {
+        expect(isOdd(value)).toEqual(false)
+    })
+})

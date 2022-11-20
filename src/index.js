@@ -1,6 +1,6 @@
-const { isPresent } = require("./isPresent");
-const { delay } = require("./delay");
-const { isEven, isOdd, isPrime } = require("./numbers");
+const { isPresent } = require('./isPresent')
+const { delay } = require('./delay')
+const { isEven, isOdd, isPrime } = require('./numbers')
 
 module.exports = {
     delay,
@@ -8,4 +8,4 @@ module.exports = {
     isEven,
     isOdd,
     isPrime,
-};
+}
