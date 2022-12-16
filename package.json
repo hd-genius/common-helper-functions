@@ -4,7 +4,11 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "eslint src",
+    "format": "prettier src --write",
+    "format-check": "prettier src --check",
+    "docs": "jsdoc -R README.md -r src -d docs"
   },
   "type": "module",
   "keywords": [
@@ -13,6 +17,12 @@
   "author": "Roy Stewart",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^29.3.1"
-  }
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "hdgenius-prettier-config": "^1.0.0",
+    "jest": "^29.3.1",
+    "prettier": "^2.7.1"
+  },
+  "prettier": "hdgenius-prettier-config"
 }
