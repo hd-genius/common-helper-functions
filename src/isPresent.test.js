@@ -6,6 +6,7 @@ describe('isPresent', () => {
     })
 
     it('should return false when given undefined', () => {
+        // eslint-disable-next-line no-undefined
         expect(isPresent(undefined)).toEqual(false)
     })
 

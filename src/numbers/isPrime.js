@@ -1,7 +1,4 @@
-exports.isPrime = (value) => {
-    const possibleFactors = generatePrimesUntil(Math.sqrt(value))
-    return value > 1 && !possibleFactors.some(isDivisibleBy(value))
-}
+const isDivisibleBy = (value) => (factor) => value % factor === 0
 
 const generatePrimesUntil = (maxValue) => {
     const primes = []
@@ -24,4 +21,7 @@ const generatePrimesUntil = (maxValue) => {
     return primes
 }
 
-const isDivisibleBy = (value) => (factor) => value % factor == 0
+exports.isPrime = (value) => {
+    const possibleFactors = generatePrimesUntil(Math.sqrt(value))
+    return value > 1 && !possibleFactors.some(isDivisibleBy(value))
+}
